@@ -1,0 +1,39 @@
+h1{
+    border-bottom: 2px solid black;
+    margin:0;
+    text-align: center;
+    font-size: 20px;
+    height:50px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+ol{
+    border-right: 2px solid black;
+    width: 100px;
+    margin: 0;
+    padding:20px;
+    
+}
+body{
+    margin: 0;
+}
+a{
+    color:brown;
+
+}
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}s
+#gird ol{
+     padding-right: 30px;
+}
+#gird #article{
+    padding-left: 20px;
+}
+div ol{
+    padding-left:30px;
+}
+div #article{
+    padding-left: 20px;
+}
