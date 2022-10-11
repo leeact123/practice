@@ -1,0 +1,88 @@
+html {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body {
+    background-color: #6BBCBE;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .shape1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    height: 100px;
+    animation: circling 1s ease-in-out infinite;
+  }
+  
+  .shape1__circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    
+  }
+  @keyframes circling {
+    from {
+      transform: rotatez(0deg);
+    }
+    to {
+      transform: rotatez(180deg);
+    }
+  }
+  
+  .shape2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    height: 100px;
+    
+  }
+  
+  .shape2__bar {
+    width:10px;
+    height: 50px;
+    background-color: white;
+    animation: wave 1s ease-in infinite;
+    
+  }
+  
+  @keyframes wave {
+    0%{
+      transform: scaleY(1);
+      }
+    50%{
+      transform: scaleY(1.5); 
+    }
+    100%{
+      transform: scaleY(1);
+    }
+    
+  }
+  
+  .shape2__bar:first-child {
+    animation-delay: 0s;
+  }
+  .shape2__bar:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .shape2__bar:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .shape2__bar:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  .shape2__bar:last-child {
+    animation-delay: 0.8s;
+  }
