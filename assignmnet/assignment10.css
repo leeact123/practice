@@ -43,6 +43,19 @@ body {
     top:100px;
     color: rgba(0, 0, 0, 0.2);
 }
+.search-bar input {
+    border: none; 
+}
+.search-bar input::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    padding-left: 20px;
+    
+} 
+.search-bar input:focus {
+    outline: none;
+}
+    
 
 .search-bar p {
     padding-left: 20px;
