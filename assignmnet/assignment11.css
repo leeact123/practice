@@ -21,9 +21,10 @@ body {
     width: 318px;
     height: 651.675px;
     margin-right: 100px;
-    
-    
 }
+    
+    
+    
 
 .player-display__header {
     display: flex;
@@ -100,6 +101,16 @@ body {
     font-weight: 600;
 }
  
+
+.playlist-sticky {
+    height: 320px;
+    overflow: auto;
+}
+
+.playlist-sticky::-webkit-scrollbar {
+    display: none; 
+}
+
 .player-musiclist {
     display: flex;
     flex-direction: column;
@@ -147,7 +158,7 @@ body {
 }
 
 .player-musiclist__text {
-    width: 35%;
+    width: 38%;
 }
 
 .player-musiclist__title-singer {
@@ -175,8 +186,9 @@ body {
     align-items: center;
     padding: 10px 30px;
     margin-top: 20px;
-    
-    
+    position: sticky;
+    bottom: 0;
+    opacity: 0.6;
     
    
 }
