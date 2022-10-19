@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mali', cursive;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #880e4f;
+    padding: 20px;
+    color: white;
+}
+
+.nav-bar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar__logo i {
+    color:#fdd835;
+    font-size: 25px;
+    margin-right: 3px;
+}
+
+.nav-bar__logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar__menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar__menu li {
+    padding:10px;
+}
+
+.nav-bar__icons {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar__icons li {
+    padding: 3px;
+}
+
+.nav-bar__tooglebtn {
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    color: #fdd835;
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .nav-bar {
+        
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar__menu {
+        
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-bar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-bar__icons {
+       justify-content: center;
+        width: 100%;
+    }
+    .nav-bar__tooglebtn {
+        display: block;
+    }
+
+}
+        
