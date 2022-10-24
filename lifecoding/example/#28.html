@@ -5,19 +5,56 @@
     <title>WEB - HTML</title>
     <meta charset="utf-8"/>
     <meta name="descriptiion" content="This is Web description site">.
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="colors.js"></script>
+    <link rel="stylesheet" href="1nightmode.css">
+    <script>
+    function nightDayHandler(self){
+    var target =  document.querySelector('body');
+    if (self.value ==='night'){
+     target.style.backgroundColor = 'black'; 
+     target.style.color = 'white';
+     self.value = 'day';
+
+     var alist = document.querySelectorAll('a');
+     var i = 0;
+     while(i < alist.length){
+     console.log(alist[i]);
+     alist[i].style.color = 'powderblue';
+     i = i + 1;
+     }
+    
+    }else {
+     target.style.backgroundColor = 'white';
+     target.style.color = 'black';
+     self.value ='night';
+
+     var alist = document.querySelectorAll('a');
+     var i = 0;
+     while(i < alist.length){
+     console.log(alist[i]);
+     alist[i].style.color = 'blue';
+     i = i + 1;
+     }
+    }
+   }
+    
+    </script>
 </head>
 
 
 <body>
    
     <h1><a href="index.html">WEB</a></h1>
-    
+ 
+   
     <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);">
 
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);">
+
+
+
+    
     
     <div id="grid">
     <ol>
@@ -40,6 +77,16 @@ HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마�
 </div>
 
 </div>
+<input type="button" value="night" onclick="
+if (this.value ==='night'){
+ document.querySelector('body').style.backgroundColor = 'black'; 
+ document.querySelector('body').style.color = 'white';
+ this.value = 'day';
+}else {
+ document.querySelector('body').style.backgroundColor = 'white';
+ document.querySelector('body').style.color = 'black';
+ this.value ='night';
+} ">
 
 
 </body>

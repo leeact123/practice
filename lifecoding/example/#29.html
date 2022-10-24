@@ -5,19 +5,63 @@
     <title>WEB - HTML</title>
     <meta charset="utf-8"/>
     <meta name="descriptiion" content="This is Web description site">.
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="colors.js"></script>
+    <link rel="stylesheet" href="1nightmode.css">
+    <script>
+    var Links = {
+        setColor:function(color){
+            var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+      console.log(alist[i]);
+      alist[i].style.color = color;
+      i = i + 1;
+        }
+    }
+}
+    var Body = {
+        setColor:function(color){
+            document.querySelector('body').style.color = color;   
+        },//객체 프로퍼티끼리의 구분할때 컴마필요
+        setBackgroundColor:function(color) {
+            document.querySelector('body').style.backgroundColor = color; 
+        }
+    }
+   
+   
+
+    function nightDayHandler(self){
+      var target =  document.querySelector('body');
+      if (self.value ==='night'){
+      Body.setBackgroundColor('black');
+      Body.setColor('white');
+      self.value = 'day';
+
+      Links.setColor('powderblue');
+    
+      }else {
+      Body.setBackgroundColor('white');
+      Body.setColor('black');
+      self.value ='night';
+
+      Links.setColor('blue');
+      }
+   }
+    
+    </script>
 </head>
 
 
 <body>
    
     <h1><a href="index.html">WEB</a></h1>
-    
+ 
+   
     <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);">
 
+
+
+    
     
     <div id="grid">
     <ol>
@@ -40,6 +84,16 @@ HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마�
 </div>
 
 </div>
+<input type="button" value="night" onclick="
+if (this.value ==='night'){
+ document.querySelector('body').style.backgroundColor = 'black'; 
+ document.querySelector('body').style.color = 'white';
+ this.value = 'day';
+}else {
+ document.querySelector('body').style.backgroundColor = 'white';
+ document.querySelector('body').style.color = 'black';
+ this.value ='night';
+} ">
 
 
 </body>

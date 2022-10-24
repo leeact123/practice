@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h1>Object(객체)</h1> 
+    <h2>Create(만드는법)</h2>
+    <script>
+        var coworkers = {
+            "programmer":"dk",
+            "designer":"jdg"
+        };
+        document.write("programmer : "+coworkers.programmer+"<br>");
+        document.write("designer : "+coworkers.designer+"<br>");
+        coworkers.bookkeeper ="edg"; //객체에 추가할 때
+        document.write("bookkeeper : "+coworkers.bookkeeper+"<br>");
+        coworkers["data scientist"] = "geng"; //이름에는 공백을 넣을 수 없다. ["띄어쓰기 있는이름"]을 .이름을 대체하여 쓸 수 있다.
+        document.write("data scientist : "+coworkers["data scientist"]+"<br>");
+    </script>
+</body>
+</html>
