@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+  
+}
+
+.header {
+    border-bottom: 1px  solid black;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+   
+  
+    
+}
+.center {
+    display: flex;
+    
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.main {
+    flex-grow: 3;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.ad {
+    flex-grow: 1;
+}
+.nav, 
+.ad {
+    flex-basis: 150px;
+    flex-shrink: 0;
+}
+
+.footer {
+    border-top: 1px solid black;
+    height: 20px;
+}
