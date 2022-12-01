@@ -1,0 +1,19 @@
+*{ 
+    margin: 0;
+}
+h1 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background-color: red;
+    border-radius: 10px;
+    margin: 2px 0;
+}
+.js-clock {
+    background-color: green;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
